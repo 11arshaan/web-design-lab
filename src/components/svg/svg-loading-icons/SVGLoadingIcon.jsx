@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import styles from "./LoadingIconSVG.module.scss";
 import { useState } from "react";
 
 function Circle({ className = "", color = "tomato", strokeWidth = 2 }) {
@@ -70,7 +69,6 @@ export const SpinningLoadingIcon2 = styled(Circle)`
 `;
 
 export function SVGLoadingIcon() {
-  const [color, setColor] = useState("tomato");
 
   return (
     <div className="component-view">

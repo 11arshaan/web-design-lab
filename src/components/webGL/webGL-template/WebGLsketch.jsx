@@ -14,9 +14,8 @@ export default function WebGLSketch() {
     //set the canvas width and height to the container width and height
     canvas.width = width;
     canvas.height = height;
-    
-
-    let gl = canvas.getContext("webgl2");
+    let gl;
+    gl = canvas.getContext("webgl2");
     canvas.style.borderColor = "crimson";
     canvas.style.borderRadius = ".5rem";
   }
