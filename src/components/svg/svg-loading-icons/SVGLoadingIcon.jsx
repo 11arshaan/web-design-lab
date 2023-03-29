@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import { useState } from "react";
 
 function Circle({ className = "", color = "tomato", strokeWidth = 2 }) {
   return (
