@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  width: 100%;
+  --s: 100px; /* size  */
+  --m: 4px; /* margin */
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+}
+

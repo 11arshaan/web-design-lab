@@ -1,0 +1,41 @@
+.app {
+  display: grid;
+  grid-template-columns: min(40%, 20rem) 1fr;
+}
+
+.component-view {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+#logo-text {
+  fill: #c3c5c8;
+}
+
+#logo-ring {
+  fill: #404a51;
+  animation: spin 60s linear infinite;
+
+}
+
+#error-page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  font-size: 2.4rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

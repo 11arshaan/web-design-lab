@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #111317;
+
+  border-right: 1px solid #1c2026;
+
+  min-height: 100vh;
+  display: flex;
+    flex-direction: column;
+
+
+  .logo {
+    height: 24rem;
+    padding: 10px;
+  }
+
+  .links {
+    height: 50rem;
+  }
+}
+
+#logo-text {
+    
+}

@@ -1,0 +1,39 @@
+
+
+.activeLinkContainer,
+.linkContainer {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  font-size: 1.5rem;
+}
+
+.linkContainer {
+  color: #404a51;
+  border: 1px solid #404a51;
+  border-left: none;
+  transition: all 0.5s;
+  text-decoration: none;
+
+  &:hover {
+    color: #a4acad;
+    border: 2px solid #a4acad;
+    transition: all 0.5s;
+  }
+}
+
+.activeLinkContainer {
+    color: #a4acad;
+    border-left: none;
+    border: 2px solid #a4acad;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+
+
+
+
