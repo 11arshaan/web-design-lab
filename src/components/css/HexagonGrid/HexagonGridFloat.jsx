@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 
-const Hexagon_Grid = styled.div`
+const HexagonGrid = styled.div`
   font-size: 0;
   width: 100%;
   &::before {
@@ -53,7 +53,7 @@ export default function HexagonGridFloat({
   return (
     <div className="component-view">
     <div className={styles.main}>
-      <Hexagon_Grid
+      <HexagonGrid
         size={size}
         margin={margin}
         factor={factor}
@@ -61,7 +61,7 @@ export default function HexagonGridFloat({
         color2={color2}
       >
         {hexagon_array}
-      </Hexagon_Grid>
+      </HexagonGrid>
     </div>
     </div>
   );
