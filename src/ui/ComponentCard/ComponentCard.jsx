@@ -24,7 +24,7 @@ export default function ComponentCard({
   return (
     <div onClick={handleClick} className="component-card">
       {preview ? (
-        <img src={preview} alt={title} />
+        <img className="component-card__preview" src={preview} alt={title} />
       ) : (
         <div className="component-card__imageframe"></div>
       )}

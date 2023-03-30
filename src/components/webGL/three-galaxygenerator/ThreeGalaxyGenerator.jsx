@@ -47,13 +47,13 @@ export default function GalaxyGenerator() {
 
     // PARAMETERS
     const parameters = {};
-    parameters.count = 10000;
+    parameters.count = 42000;
     parameters.size = 0.01;
     parameters.radius = 10;
-    parameters.branches = 3;
-    parameters.spin = 0.2;
+    parameters.branches = 6;
+    parameters.spin = 0.3;
     parameters.randomness = 0;
-    parameters.tightness = 2; //randomness power
+    parameters.tightness = 3; //randomness power
     parameters.insideColor = "#ff6030";
     parameters.outsideColor = "#1b3984";
     parameters.motion = true;
