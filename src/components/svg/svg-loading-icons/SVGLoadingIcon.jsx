@@ -67,7 +67,7 @@ export const SpinningLoadingIcon2 = styled(Circle)`
   }
 `;
 
-export function SVGLoadingIcon() {
+export default function SVGLoadingIcon() {
 
   return (
     <div className="component-view">

@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { openModal, selectComponent } from "../../store/modalReducer";
 
 export default function ComponentCard({
-  component,
+  componentID,
   preview,
   title = "woo",
   description,
@@ -13,7 +13,7 @@ export default function ComponentCard({
   const handleClick = (e) => {
     dispatch(
       selectComponent({
-        component: component,
+        componentID: componentID,
         title: title,
         description: description,
       })

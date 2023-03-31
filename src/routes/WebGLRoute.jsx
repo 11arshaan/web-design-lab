@@ -7,8 +7,8 @@ import galaxygeneratorpreview from "../assets/images/previews/galaxygenerator.pn
 export default function WebGLRoute() {
   return (
   <div className="container">
-  <ComponentCard component={WebGLSketch} title="WebGL Sketch" description={"A template for starting WebGL designs in react."} />
-  <ComponentCard component={ThreeGalaxyGenerator} preview={galaxygeneratorpreview} title="Galaxy Generator" description={"An interactive galaxy generator made with Three.js"} />
+  <ComponentCard componentID={"WebGLsketch"} title="WebGL Sketch" description={"A template for starting WebGL designs in react."} />
+  <ComponentCard componentID={"ThreeGalaxyGenerator"} preview={galaxygeneratorpreview} title="Galaxy Generator" description={"An interactive galaxy generator made with Three.js"} />
 
   </div>);
 }

@@ -1,8 +1,7 @@
 import styles from "./HexagonGridFloat.module.css";
 import styled from "styled-components";
-
-
-
+import * as dat from "lil-gui";
+import { useState, useEffect, useRef} from "react";
 
 const HexagonGrid = styled.div`
   font-size: 0;
@@ -38,27 +37,54 @@ const HexagonGrid = styled.div`
 
 export default function HexagonGridFloat({
   count = 91,
-  color1 = "cyan",
-  color2 = "teal",
-  size = 100,
+  size = 70,
   margin = 4,
 }) {
-  const factor = 1.732 * size + 4 * margin - 1;
+  const [state, setState] = useState({
+    count: count,
+    color1: "#00ffff",
+    color2: "#008080",
+    size: size,
+    margin: margin,
+  });
+  const factor = 1.732 * state.size + 4 * state.margin - 1;
+  
+
+  const ref = useRef(null);
+  useEffect(() => {
+    const gui = new dat.GUI({container: ref.current});
+
+    gui.add(state, "count", 1, 500, 1).onFinishChange((value) => {
+      setState({ ...state, count: value });
+    });
+    gui.add(state, "size", 10, 150, 1).onFinishChange((value) => {
+      setState({ ...state, size: value });
+    });
+    gui.add(state, "margin", 1, 70, 1).onFinishChange((value) => {
+      setState({ ...state, margin: value });
+    });
+    gui.addColor(state, "color1").onFinishChange((value) => {
+      setState({ ...state, color1: value });
+    });
+    gui.addColor(state, "color2").onFinishChange((value) => {
+      setState({ ...state, color2: value });
+    });
+  }, []);
 
   const hexagon_array = [];
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < state.count; i++) {
     hexagon_array.push(<div key={i}></div>);
   }
 
   return (
     <div className="component-view">
-    <div className={styles.main}>
+    <div ref={ref} className={styles.main}>
       <HexagonGrid
-        size={size}
-        margin={margin}
+        size={state.size}
+        margin={state.margin}
         factor={factor}
-        color1={color1}
-        color2={color2}
+        color1={state.color1}
+        color2={state.color2}
       >
         {hexagon_array}
       </HexagonGrid>
