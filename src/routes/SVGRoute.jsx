@@ -7,7 +7,7 @@ export function SVGRoute(props) {
   return (
     <div className="container">
       <ComponentCard
-        component={SVGLoadingIcon}
+        componentID={"SVGLoadingIcon"}
         preview={svgloadingiconspreview}
         title="SVG Loading Icons"
         description="Loading icons made with SVG for use in app loading states."

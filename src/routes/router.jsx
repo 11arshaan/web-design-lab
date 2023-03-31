@@ -8,6 +8,7 @@ import { SVGRoute } from "./SVGRoute";
 import WebGLRoute from "./WebGLRoute";
 import CSSRoute from "./CSSRoute";
 import UtilityRoute from "./UtilityRoute";
+import CanvasRoute from "./CanvasRoute";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorRoute />,
     children: [
       { path: "css", element: <CSSRoute /> },
+      { path: "canvas", element: <CanvasRoute /> },
       { path: "utility", element: <UtilityRoute /> },
       { path: "svg", element: <SVGRoute /> },
       { path: "webgl", element: <WebGLRoute /> },

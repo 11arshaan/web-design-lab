@@ -4,7 +4,7 @@ export const modalSlice = createSlice({
   name: "modal",
   initialState: {
     isOpen: false,
-    component: null,
+    componentID: null,
     title: null,
     description: null,
   },
@@ -16,7 +16,7 @@ export const modalSlice = createSlice({
       state.isOpen = false;
     },
     selectComponent(state, action) {
-      state.component = action.payload.component;
+      state.componentID = action.payload.componentID;
       state.title = action.payload.title;
       state.description = action.payload.description;
     },

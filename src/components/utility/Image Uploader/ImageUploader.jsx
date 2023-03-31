@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./Imageuploader.module.scss";
+import styles from "./ImageUploader.module.scss";
 
 export default function ImageUploader() {
     
