@@ -1,5 +1,5 @@
 
-# Harshaan's Web Design Lab
+# Harshaan's Web Lab
 This project collects my web design experiments into a single page application built with React.  
 The React app is hosted on Github pages; it contains interactive previews of the work.    
 > To use a component, simply copy and paste its folder to your components directory.  
