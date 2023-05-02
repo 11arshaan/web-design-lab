@@ -1,0 +1,28 @@
+.slanted-lines-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#slanted-lines-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#slanted-lines-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#slanted-lines-buttons {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,28 @@
+.tiled-lines-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#tiled-lines-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#tiled-lines-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#tiled-lines-buttons {
+  display: flex;
+  gap: 1rem;
+}
