@@ -1,7 +1,8 @@
 import ComponentCard from "../ui/ComponentCard/ComponentCard";
-import FollowPointer from "../components/utility/FollowPointer/FollowPointer";
+
 
 import followpointerpreview from "../assets/images/previews/followpointer.png";
+import streamphotopreview from "../assets/images/previews/streamphoto.jpg";
 
 export default function UtilityRoute() {
   return (
@@ -14,6 +15,7 @@ export default function UtilityRoute() {
       />
       <ComponentCard
         componentID={"StreamPhoto"}
+        preview={streamphotopreview}
         title="Capture Stream Photo"
         description="A simple component that captures a photo from the user's webcam and displays it on the screen"
       />

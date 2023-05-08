@@ -14,7 +14,12 @@ export default function StreamPhoto() {
     setCanvas(document.querySelector("#stream-photo__canvas"));
     setPhoto(document.querySelector("#stream-photo__photo"));
 
-
+ // Cleanup function to stop the media stream when the component is unmounted
+ return () => {
+  if (video && video.srcObject) {
+    stopMediaStream(video);
+  }
+};
 
   }, []);
  
