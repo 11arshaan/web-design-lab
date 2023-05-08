@@ -4,11 +4,9 @@ import {
 } from "react-router-dom";
 import App from "../App";
 import ErrorRoute from "./ErrorRoute";
-import { SVGRoute } from "./SVGRoute";
-import WebGLRoute from "./WebGLRoute";
-import CSSRoute from "./CSSRoute";
+import UIRoute from "./UIRoute";
 import UtilityRoute from "./UtilityRoute";
-import CanvasRoute from "./CanvasRoute";
+import CreativeRoute from "./CreativeRoute";
 
 const router = createBrowserRouter([
   {
@@ -16,11 +14,9 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorRoute />,
     children: [
-      { path: "css", element: <CSSRoute /> },
-      { path: "canvas", element: <CanvasRoute /> },
+      { path: "ui", element: <UIRoute /> },
+      { path: "creative", element: <CreativeRoute /> },
       { path: "utility", element: <UtilityRoute /> },
-      { path: "svg", element: <SVGRoute /> },
-      { path: "webgl", element: <WebGLRoute /> },
     ],
   },
 ]);

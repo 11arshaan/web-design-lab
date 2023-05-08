@@ -13,11 +13,9 @@ export default function Navbar() {
       </div>
 
       <div className={styles.links}>
+        <NavbarLink to="/ui" title="UI" />
         <NavbarLink to="/utility" title="Utility" />
-        <NavbarLink to="/css" title="CSS" />
-        <NavbarLink to="/canvas" title="Canvas" />
-        <NavbarLink to="/svg" title="SVG" />
-        <NavbarLink to="/webgl" title="WebGL" />
+        <NavbarLink to="/creative" title="Creative" />
       </div>
     </div>
   );
