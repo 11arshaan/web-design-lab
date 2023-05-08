@@ -12,6 +12,11 @@ export default function UtilityRoute() {
         title="Follow Pointer"
         description="This uses react's useState hook to capture the pointer position. Any custom element or graphic can then be 'attached' to the pointer"
       />
+      <ComponentCard
+        componentID={"StreamPhoto"}
+        title="Capture Stream Photo"
+        description="A simple component that captures a photo from the user's webcam and displays it on the screen"
+      />
       
     </div>
   );
